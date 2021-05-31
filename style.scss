@@ -1,31 +1,29 @@
-$colorBg:lightblue;
-$colorLi: lightsalmon;
+$colorBg: lightblue; 
+$colorLi:lightsalmon;
+$colorFo: yellow;
 
 @mixin fontStyle($color){
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
     color:$color;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body{
-    background-color:$colorBg;
+    background-color: $colorBg;
 }
 h1{
     @include fontStyle(blue);
     display: flex;
     flex-direction: row;
-    justify-content:center;
     align-items: center;
+    justify-content: center;
 }
-
 p{
     @include fontStyle(green);
 }
-
 #secondP{
     @include fontStyle(red);
 }
-
 ul{
     width: 1000px;
     height: 90px;
@@ -35,16 +33,16 @@ ul{
     justify-content: flex-start;
     li{
         width: 100px;
-        margin:10px;
-        height: 40px;
-        border-radius: 20px;
-        background-color:$colorLi;
-        cursor: pointer;
-        list-style-type: none;
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+    margin:10px;
+    height: 40px;
+    border-radius: 20px;
+    background-color:$colorLi;
+    cursor: pointer;
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
         a{
             @include fontStyle(lightblue);
             text:{
@@ -53,6 +51,11 @@ ul{
             }
         }
     }
+}
+footer{
+    background-color: $colorFo;
+    border-radius: 10px;
+    margin-top:40px;
 }
 #footer_title{
     @include fontStyle(blue);

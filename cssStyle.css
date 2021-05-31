@@ -46,10 +46,17 @@ ul li a{
         color:lightblue;
         text-transform: uppercase;
 }
+footer{
+    background-color: yellow;
+    border-radius: 10px;
+    margin-top:40px;
+}
 #footer_title{
+    color:blue;
     background-color: yellow;
     display: flex;
     flex-direction: row;
     justify-content:center;
     align-items: center;
 }
+
