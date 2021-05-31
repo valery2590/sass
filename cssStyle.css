@@ -46,3 +46,10 @@ ul li a{
         color:lightblue;
         text-transform: uppercase;
 }
+#footer_title{
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}

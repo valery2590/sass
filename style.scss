@@ -54,3 +54,10 @@ ul{
         }
     }
 }
+#footer_title{
+    @include fontStyle(blue);
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
